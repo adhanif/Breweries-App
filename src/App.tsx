@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Companies from './component/companies/Companies';
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Companies />
+    </div>
+  );
+};
 
-export default App
+export default App;
