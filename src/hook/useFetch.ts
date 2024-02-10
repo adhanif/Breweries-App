@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import axios from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 
 export function useFetch<T>(url: string) {
   const [data, setData] = useState<T[]>([]);
@@ -10,15 +10,16 @@ export function useFetch<T>(url: string) {
   useEffect(() => {
     axios
       .get(url)
-      .then((res) => {
+      .then((res: AxiosResponse<T[]>) => {
         // console.log(res.data);
         setData(res.data);
         setLoading(false);
+        setError('');
       })
-      .catch((error) => {
+      .catch((error: AxiosError) => {
         // console.log(error);
         setError(error.message);
-        setLoading(true);
+        setLoading(false);
       });
   }, [url]);
 
