@@ -1,4 +1,4 @@
-export type CompanyType = {
+export type BreweryType = {
   id: string;
   name: string;
   brewery_type: string;
@@ -17,6 +17,6 @@ export type CompanyType = {
   street: string;
 };
 
-export type CompanyProp = {
-  company: CompanyType;
+export type BreweryProp = {
+  brewery: BreweryType;
 };
