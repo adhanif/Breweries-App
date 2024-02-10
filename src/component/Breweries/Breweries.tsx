@@ -22,7 +22,7 @@ export default function Breweries() {
 
   return (
     <Container maxWidth='xl'>
-      <Grid container spacing={2}>
+      <Grid container columnSpacing={10} rowSpacing={5}>
         {data &&
           data.map((brewery) => {
             return (
