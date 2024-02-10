@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFetch } from '../../hook/useFetch';
 import { BreweryType } from '../../misc/types';
 import Brewery from '../Brewery/Brewery';
-import CircularProgress from '@mui/material/CircularProgress';
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import Loading from '../loading/Loading';
 
 export default function Breweries() {

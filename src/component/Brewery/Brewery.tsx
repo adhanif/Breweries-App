@@ -3,13 +3,9 @@ import React from 'react';
 import { BreweryProp } from '../../misc/types';
 
 import {
-  Avatar,
-  Box,
-  Button,
   Card,
   CardActions,
   CardContent,
-  CardHeader,
   Grid,
   Typography,
   Stack,
