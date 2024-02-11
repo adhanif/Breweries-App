@@ -11,29 +11,30 @@ import {
   Stack,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { CustomizedButton } from '../customStyling/customStyling';
+import { CustomizedButton } from '../CustomStyling/customStyling';
 import SendIcon from '@mui/icons-material/Send';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Brewery({ brewery }: BreweryProp) {
-  // console.table(brewery);
+  // console.log(brewery);
   return (
     <Grid container justifyContent='center'>
       <Card
         variant='outlined'
         sx={{
-          minWidth: '18rem',
+          minWidth: '20rem',
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
           padding: '1rem',
+          minHeight: '15rem',
         }}
       >
         <CardContent>
-          <Typography variant='body1' fontWeight='900' marginBottom={2}>
+          <Typography variant='body2' fontWeight='800' marginBottom={1}>
             {brewery.name}
           </Typography>
 
-          <Stack marginBottom={2} spacing={0.5}>
+          <Stack marginBottom={1} spacing={0.5}>
             <Stack direction='row' alignItems=' center' spacing={1}>
               <LocationOnIcon fontSize='small' />
 
@@ -62,7 +63,7 @@ export default function Brewery({ brewery }: BreweryProp) {
               fontWeight='700'
               sx={{
                 backgroundColor: '#D8D8D8',
-                padding: '5px 40px',
+                padding: '5px 20px',
                 borderRadius: '3px',
               }}
             >
@@ -74,7 +75,7 @@ export default function Brewery({ brewery }: BreweryProp) {
           <Grid display='flex' alignItems='center' justifyContent='center'>
             <Link to={`/Breweries/${brewery.id}`}>
               <CustomizedButton variant='contained' endIcon={<SendIcon />}>
-                More Detail
+                Detail
               </CustomizedButton>
             </Link>
           </Grid>
