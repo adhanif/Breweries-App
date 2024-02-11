@@ -14,7 +14,7 @@ import {
 } from '@mui/material';
 
 import MapDetail from '../Map/MapDetail';
-import { CustomizedButtonMedium } from '../CustomStyling/CustomeButton2';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
 
 export default function BreweryDetail() {
   const breweryId = useParams();
