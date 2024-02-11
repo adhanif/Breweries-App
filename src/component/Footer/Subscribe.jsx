@@ -7,7 +7,7 @@ import {
   Input,
   Grid,
 } from '@mui/material';
-import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
+import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
 
 const Subscribe = () => {
   return (
