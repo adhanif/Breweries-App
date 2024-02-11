@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { useFetch } from '../../hook/useFetch';
 import { BreweryType } from '../../misc/types';
@@ -11,6 +12,7 @@ import {
   Link,
   Typography,
 } from '@mui/material';
+
 import MapDetail from '../Map/MapDetail';
 import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
 
