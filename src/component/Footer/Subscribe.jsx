@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Typography, TextField, Grid } from '@mui/material';
-import { CustomizedButtonMedium } from '../CustomStyling/CustomeButton2';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
 
 const Subscribe = () => {
   return (
