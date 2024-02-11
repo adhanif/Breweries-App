@@ -13,7 +13,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { BreweryType } from '../../misc/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import Brewery from '../Brewery/Brewery';
-import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
+import CustomizedButtonMedium from '../CustomStyling/CustomeStyling2';
 
 type Inputs = {
   searchQuery: string;
