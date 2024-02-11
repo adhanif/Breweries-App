@@ -1,22 +1,78 @@
 # Breweries App
 
-Fetch, display, and search for brewery companies from the given API endpoint, using React and TypeScript
+## Overview
 
-## Requirements
+Welcome to the Breweries app! This application is built using React and leverages the Open Brewery DB API to provide information about breweries. You can explore details about individual breweries, list breweries, get a random brewery, search breweries, and more.
 
-1. Check the documentation at [https://www.openbrewerydb.org/documentation](https://www.openbrewerydb.org/documentation) Fetch and display information of all the companies.
+## Installation
 
-2. Have proper display and routing that user can switch to/back from specific company's detailed page
+To run the app locally, follow these steps:
 
-3. Create search component to enable user to input text and search for companies by name.
+1. Clone the repository:
 
-4. Use MaterialUI to make your design more appealing and responsive
+   ```bash
+   git clone https://github.com/adhanif/fs17-week3-React.git
+   cd breweries
+   ```
 
-5. Deploy your application and rewrite README file
+2. Install dependencies:
 
-## Optional
+   ```bash
+   npm install
+   ```
 
-6. Implement performance optimization where applicable
-7. Use the queries listed in the documentation to sort and limit the returned data and build pagination feature.
+3. Start the development server:
 
-8. Create a contact form so that user can send question along with their contact information.
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the app.
+
+# Technologies Used
+
+- React
+- Axios for API requests
+- Leaflet for map integration
+- React Hook Form for form handling
+- Material-UI for styling and components
+- TypeScript for static typing
+
+## API Documentation
+
+The application uses the Open Brewery DB API to fetch brewery information. Below are some of the available endpoints:
+
+- **Single Brewery:**
+
+  - [https://api.openbrewerydb.org/v1/breweries/{obdb-id}](https://api.openbrewerydb.org/v1/breweries/{obdb-id})
+
+- **List Breweries:**
+
+  - [https://api.openbrewerydb.org/v1/breweries](https://api.openbrewerydb.org/v1/breweries)
+
+- **Random Brewery:**
+
+  - [https://api.openbrewerydb.org/v1/breweries/random](https://api.openbrewerydb.org/v1/breweries/random)
+
+- **Search Breweries:**
+
+  - [https://api.openbrewerydb.org/v1/breweries/search?query={search}](https://api.openbrewerydb.org/v1/breweries/search?query={search})
+
+- **Autocomplete:**
+
+  - [https://api.openbrewerydb.org/v1/breweries/autocomplete?query={search}](https://api.openbrewerydb.org/v1/breweries/autocomplete?query={search})
+
+- **Metadata:**
+  - [https://api.openbrewerydb.org/v1/breweries/meta](https://api.openbrewerydb.org/v1/breweries/meta)
+
+For more detailed information and usage examples, refer to the [Open Brewery DB Documentation](documentation-link).
+
+# Development
+
+If you want to contribute to the project or explore the codebase, feel free to do so! Make sure to follow the development best practices and adhere to the coding standards.
+
+# Acknowledgements
+
+Special thanks to Open Brewery DB for providing the API that powers this application.
+
+© 2024 Your Name. All rights reserved.
