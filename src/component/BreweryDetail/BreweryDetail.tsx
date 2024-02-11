@@ -16,7 +16,7 @@ import {
 import MapDetail from '../Map/MapDetail';
 import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
 
-const BreweryDetail = () => {
+export default function BreweryDetail() {
   const breweryId = useParams();
   const navigate = useNavigate();
 
@@ -121,6 +121,4 @@ const BreweryDetail = () => {
       </Grid>
     </Container>
   );
-};
-
-export default BreweryDetail;
+}
