@@ -4,6 +4,14 @@
 
 Welcome to the Breweries app! This application is built using React and leverages the Open Brewery DB API to provide information about breweries. You can explore details about individual breweries, list breweries, get a random brewery, search breweries, and more.
 
+## Deployment
+
+The Breweries app is deployed and accessible online. You can visit the deployed website by clicking the button below:
+
+[![Explore Breweries](https://img.shields.io/badge/Explore%20Breweries-Netlify-blue?style=for-the-badge&logo=netlify)](https://beweries.netlify.app/)
+
+Feel free to explore the breweries and enjoy the features of the app!
+
 ## Installation
 
 To run the app locally, follow these steps:
