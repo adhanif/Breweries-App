@@ -9,7 +9,7 @@ import {
 import React, { useState } from 'react';
 
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
 import { BreweryType } from '../../misc/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import Brewery from '../Brewery/Brewery';
