@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-  Typography,
-  Stack,
-  TextField,
-  Button,
-  Input,
-  Grid,
-} from '@mui/material';
-import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
+
+import { Typography, TextField, Grid } from '@mui/material';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomeButton2';
 
 const Subscribe = () => {
   return (
@@ -20,9 +14,7 @@ const Subscribe = () => {
           color='error'
           sx={{ bgcolor: 'white', borderRadius: '4px', color: 'white' }}
         />
-        <CustomizedButtonMedium variant='contained'>
-          Subscribe
-        </CustomizedButtonMedium>
+        <CustomizedButtonMedium>Subscribe</CustomizedButtonMedium>
       </Grid>
 
       <Grid>
