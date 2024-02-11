@@ -8,7 +8,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
 
 type Inputs = {
   name: string;

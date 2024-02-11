@@ -11,7 +11,7 @@ import {
   Stack,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { CustomizedButton } from '../CustomStyling/customStyling';
+import { CustomizedButton } from '../CustomStyling/CustomStyling';
 import SendIcon from '@mui/icons-material/Send';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';

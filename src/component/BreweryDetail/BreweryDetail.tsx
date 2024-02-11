@@ -12,7 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 import MapDetail from '../Map/MapDetail';
-import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
+import { CustomizedButtonMedium } from '../CustomStyling/CustomStyling';
 
 const BreweryDetail = () => {
   const breweryId = useParams();
