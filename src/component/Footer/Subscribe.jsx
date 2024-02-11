@@ -14,7 +14,9 @@ const Subscribe = () => {
           color='error'
           sx={{ bgcolor: 'white', borderRadius: '4px', color: 'white' }}
         />
-        <CustomizedButtonMedium>Subscribe</CustomizedButtonMedium>
+        <CustomizedButtonMedium variant='contained'>
+          Subscribe
+        </CustomizedButtonMedium>
       </Grid>
 
       <Grid>
