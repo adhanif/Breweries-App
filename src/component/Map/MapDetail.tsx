@@ -25,7 +25,7 @@ const MapDetail: FC<MapProps> = ({ center, zoom, name }) => {
       scrollWheelZoom={true}
       style={{
         height: '50vh',
-        width: '102vh',
+        minWidth: '50rem',
         borderRadius: '0.5rem',
       }}
     >

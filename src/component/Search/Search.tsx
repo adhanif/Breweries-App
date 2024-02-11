@@ -1,10 +1,10 @@
 import {
-  Button,
   Container,
   Grid,
   Stack,
   TextField,
   Typography,
+  Box,
 } from '@mui/material';
 import React, { useState } from 'react';
 
@@ -14,6 +14,7 @@ import { BreweryType } from '../../misc/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import Brewery from '../Brewery/Brewery';
 
+
 type Inputs = {
   searchQuery: string;
   exampleRequired: string;
@@ -21,8 +22,6 @@ type Inputs = {
 
 export default function Search() {
   const [data, setData] = useState<BreweryType[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
 
   const {
     register,
@@ -38,32 +37,24 @@ export default function Search() {
       .get(url)
       .then((res: AxiosResponse<BreweryType[]>) => {
         setData(res.data);
-        setLoading(false);
-        setError('');
       })
       .catch((error: AxiosError) => {
-        setError(error.message);
-        setLoading(false);
+        console.log(error.message);
       });
   };
 
   return (
     <>
-      <Container maxWidth='md'>
-        {/* <Grid container justifyContent='center'> */}
-        <Grid marginBottom={10}>
+      <Container maxWidth='md' sx={{ marginBottom: '12rem' }}>
+        <Grid>
           <form onSubmit={handleSubmit(onSubmit)}>
-            {/* register your input into the hook by invoking the "register" function */}
-
             <Stack
               direction='row'
-              // spacing={2}
               justifyContent='center'
               alignItems='center'
               marginX={5}
             >
               <TextField
-                // defaultValue='test'
                 {...register('searchQuery', {
                   required: true,
                   maxLength: 20,
@@ -75,14 +66,6 @@ export default function Search() {
                 color='warning'
                 fullWidth
               />
-
-              {/* <input
-                {...register('searchQuery', {
-                  required: true,
-                  maxLength: 20,
-                  pattern: /^[A-Za-z]+$/i,
-                })}
-              /> */}
 
               {errors.exampleRequired && <span>This field is required</span>}
               <CustomizedButtonMedium variant='contained' type='submit'>
@@ -100,7 +83,6 @@ export default function Search() {
                 </Typography>
               )}
             </Stack>
-            {/* <input type='search' /> */}
           </form>
         </Grid>
       </Container>
@@ -116,7 +98,6 @@ export default function Search() {
             })}
         </Grid>
       </Container>
-      {/* </Grid> */}
     </>
   );
 }

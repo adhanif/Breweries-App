@@ -33,7 +33,7 @@ export default function Breweries() {
       >
         AFFILIATED BREWERIES
       </Typography>
-      <Grid container columnSpacing={5} rowSpacing={5}>
+      <Grid container columnSpacing={5} rowSpacing={5} marginBottom={30}>
         {data &&
           data.map((brewery) => {
             return (
