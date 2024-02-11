@@ -20,7 +20,7 @@ To run the app locally, follow these steps:
 
    ```bash
    git clone https://github.com/adhanif/fs17-week3-React.git
-   cd breweries
+   cd fs17-week3-React
    ```
 
 2. Install dependencies:
