@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useFetch } from '../../hook/useFetch';
 import { BreweryType } from '../../misc/types';
 import Loading from '../loading/Loading';
@@ -12,9 +12,12 @@ import {
   Typography,
 } from '@mui/material';
 import MapDetail from '../Map/MapDetail';
+import { CustomizedButtonMedium } from '../CustomStyling/customStyling';
 
 const BreweryDetail = () => {
   const breweryId = useParams();
+  const navigate = useNavigate();
+
   const url = `https://api.openbrewerydb.org/v1/breweries?by_ids=${breweryId.id}`;
   const { data, loading, error } = useFetch<BreweryType>(url);
 
@@ -25,6 +28,10 @@ const BreweryDetail = () => {
   if (error) {
     return <div>Error: {error}</div>;
   }
+
+  const handleClick = () => {
+    navigate(-1);
+  };
 
   return (
     <Container maxWidth='md'>
@@ -100,6 +107,15 @@ const BreweryDetail = () => {
           zoom={13}
           name={data[0].name}
         />
+      </Grid>
+      <Grid container justifyContent={'center'}>
+        <CustomizedButtonMedium
+          variant='contained'
+          type='submit'
+          onClick={handleClick}
+        >
+          Back
+        </CustomizedButtonMedium>
       </Grid>
     </Container>
   );

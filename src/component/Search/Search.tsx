@@ -14,7 +14,6 @@ import { BreweryType } from '../../misc/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import Brewery from '../Brewery/Brewery';
 
-
 type Inputs = {
   searchQuery: string;
   exampleRequired: string;
@@ -98,6 +97,7 @@ export default function Search() {
             })}
         </Grid>
       </Container>
+      
     </>
   );
 }
