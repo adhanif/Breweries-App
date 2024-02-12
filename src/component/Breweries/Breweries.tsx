@@ -11,6 +11,11 @@ export default function Breweries() {
 
   const { data, loading, error } = useFetch<BreweryType>(url);
 
+  // const memoizedBreweries = useMemo(() => {
+  //   // Perform any expensive operations or transformations here
+  //   return breweries;
+  // }, [data]);
+
   if (loading) {
     return <Loading />;
   }
