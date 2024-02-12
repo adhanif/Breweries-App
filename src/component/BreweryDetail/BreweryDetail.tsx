@@ -3,7 +3,6 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useFetch } from '../../hook/useFetch';
 import { BreweryType } from '../../misc/types';
-import Loading from '../loading/Loading';
 import {
   Card,
   CardContent,
@@ -14,6 +13,7 @@ import {
 } from '@mui/material';
 
 import MapDetail from '../Map/MapDetail';
+import Loading from '../loading/Loading';
 import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
 
 export default function BreweryDetail() {

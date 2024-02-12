@@ -1,9 +1,9 @@
 import React from 'react';
-
 import { Box, Grid } from '@mui/material';
+import SocialMediaIcons from './SocialMediaIcons';
+
 import Subscribe from './Subscribe';
 import Info from './Info';
-import SocialMediaIcons from './SocialMediaIcons';
 
 const Footer = () => {
   return (

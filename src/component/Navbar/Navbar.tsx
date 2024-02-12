@@ -14,8 +14,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-import { Avatar } from '@mui/material';
-import logo from '../Images/OBD.png';
 
 interface Props {
   window?: () => Window;

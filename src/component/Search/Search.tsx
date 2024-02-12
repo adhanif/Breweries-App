@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
   Container,
   Grid,
@@ -6,14 +7,12 @@ import {
   Typography,
   Box,
 } from '@mui/material';
-import React, { useState } from 'react';
-
 import { useForm, SubmitHandler } from 'react-hook-form';
-
-import { BreweryType } from '../../misc/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
+
 import Brewery from '../Brewery/Brewery';
 import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
+import { BreweryType } from '../../misc/types';
 
 type Inputs = {
   searchQuery: string;

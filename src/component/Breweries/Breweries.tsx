@@ -1,13 +1,14 @@
 import React, { useMemo, useState } from 'react';
 import { useFetch } from '../../hook/useFetch';
-import { BreweryType } from '../../misc/types';
-import Brewery from '../Brewery/Brewery';
 import { Container, Grid, Typography, Pagination, Box } from '@mui/material';
+
 import Loading from '../loading/Loading';
+import Brewery from '../Brewery/Brewery';
+import { BreweryType } from '../../misc/types';
 
 export default function Breweries() {
   const url = 'https://api.openbrewerydb.org/v1/breweries';
-  //   const url = 'https://fakestoreapi.com/users';
+
   const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
 

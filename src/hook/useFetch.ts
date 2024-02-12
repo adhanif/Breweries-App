@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import axios, { AxiosError, AxiosResponse } from 'axios';
 
 export function useFetch<T>(url: string) {
@@ -11,13 +10,11 @@ export function useFetch<T>(url: string) {
     axios
       .get(url)
       .then((res: AxiosResponse<T[]>) => {
-        // console.log(res.data);
         setData(res.data);
         setLoading(false);
         setError('');
       })
       .catch((error: AxiosError) => {
-        // console.log(error);
         setError(error.message);
         setLoading(false);
       });

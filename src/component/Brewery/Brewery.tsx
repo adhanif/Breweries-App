@@ -1,7 +1,4 @@
 import React from 'react';
-
-import { BreweryProp } from '../../misc/types';
-
 import {
   Card,
   CardActions,
@@ -14,10 +11,11 @@ import { Link } from 'react-router-dom';
 import SendIcon from '@mui/icons-material/Send';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';
+
 import { CustomizedButton } from '../CustomStyling/CustomStyling';
+import { BreweryProp } from '../../misc/types';
 
 export default function Brewery({ brewery }: BreweryProp) {
-  // console.log(brewery);
   return (
     <Grid container justifyContent='center'>
       <Card

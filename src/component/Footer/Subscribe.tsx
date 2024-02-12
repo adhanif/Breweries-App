@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Typography, TextField, Grid } from '@mui/material';
+
 import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
 
 const Subscribe = () => {
@@ -9,7 +9,6 @@ const Subscribe = () => {
       <Grid>
         <TextField
           variant='outlined'
-          // label='Email'
           size='small'
           color='error'
           sx={{ bgcolor: 'white', borderRadius: '4px', color: 'white' }}

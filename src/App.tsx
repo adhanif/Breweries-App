@@ -13,8 +13,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Companies />}></Route>
-        <Route path='/Breweries' element={<Companies />}></Route>
-        <Route path='/Breweries/:id' element={<BreweryDetail />}></Route>
+        <Route path='/breweries' element={<Companies />}></Route>
+        <Route path='/breweries/:id' element={<BreweryDetail />}></Route>
         <Route path='/search' element={<Search />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Box,
   Container,
@@ -8,6 +7,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useForm, SubmitHandler } from 'react-hook-form';
+
 import { CustomizedButtonMedium } from '../CustomStyling/CustomeStyling2';
 
 type Inputs = {
@@ -25,7 +25,6 @@ export default function Contact() {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data, e) => {
-    // console.log(data);
     e?.target.reset();
   };
 
