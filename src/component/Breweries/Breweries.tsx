@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useFetch } from '../../hook/useFetch';
 import { BreweryType } from '../../misc/types';
 import Brewery from '../Brewery/Brewery';
@@ -11,10 +11,10 @@ export default function Breweries() {
 
   const { data, loading, error } = useFetch<BreweryType>(url);
 
-  // const memoizedBreweries = useMemo(() => {
-  //   // Perform any expensive operations or transformations here
-  //   return breweries;
-  // }, [data]);
+  const memoizedBreweries = useMemo(() => {
+    console.log('Recalculating memoizedBreweries');
+    return data || [];
+  }, [data]);
 
   if (loading) {
     return <Loading />;
@@ -39,8 +39,8 @@ export default function Breweries() {
         AFFILIATED BREWERIES
       </Typography>
       <Grid container columnSpacing={5} rowSpacing={5} marginBottom={30}>
-        {data &&
-          data.map((brewery) => {
+        {memoizedBreweries &&
+          memoizedBreweries.map((brewery) => {
             return (
               <Grid item key={brewery.id} xs={12} sm={6} md={4} lg={4}>
                 <Brewery brewery={brewery} />
