@@ -19,8 +19,8 @@ To run the app locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/adhanif/fs17-week3-React.git
-   cd fs17-week3-React
+   git clone  https://github.com/adhanif/Breweries-App.git
+   cd Breweries-App
    ```
 
 2. Install dependencies:
